@@ -1,14 +1,23 @@
 # PythonDiscordBot
 Made for use with AFROTC Detachment 675's Discord Messaging Server.
 
-Needs: Discord Dev Account (to retrieve auth token for DISCORD_TOKEN)
+Things you may need:
+       Discord Dev Account
+       
+       The unique token for our channel. This must always be kept secret.
+       
        Channel ID's where commands will be sent, and where the bot will send messages.
+       
        Python 3
 
 # Commands:
+
 $test: a test message to see if the bot is online and functioning
+
 $squadron1: sends out recall message to squadron 1 main channel
+
 $squadron2: sends out recall message to squadron 2 main channel
+
 $squadron3: sends out recall message to squadron 3 main channel
 
 # How to:     
