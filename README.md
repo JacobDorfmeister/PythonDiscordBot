@@ -1,8 +1,12 @@
 # PythonDiscordBot
 Made for use with AFROTC Detachment 675's Discord Messaging Server.
 
+#Commands:
 $test: a test message to see if the bot is online and functioning
-$recall: sends out recall message to entire server
+$squadron1: sends out recall message to squadron 1 main channel
+$squadron2: sends out recall message to squadron 2 main channel
+$squadron3: sends out recall message to squadron 3 main channel
+
 
 
 Needs: Discord Dev Account (to retrieve auth token for DISCORD_TOKEN)
