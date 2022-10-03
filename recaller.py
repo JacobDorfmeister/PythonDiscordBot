@@ -18,21 +18,30 @@ client = discord.Client()
 # preset messages -----
 @client.event
 async def on_message(message):
-    # it has to have this to work
     if message.author == client.user:
         return
 
-    # "$recall" in the channel "recall" triggers the bot
-    if message.content.startswith("$recall") and message.channel.name == 'cadet-admin':
-        # this tells it where to look, channel ID fills in the Xs:
-        channel = client.get_channel(XXXXXXXXXXXXXXXXXXXXXXX)
-        # this is the message that it sends:
-        await channel.send('@everyone THIS IS A TEST RECALL! GO THIS LINK ASAP: https://forms.gle/csDrvKMXdtBJhYv17')
-
     # test run bots messaging capability in admin channel.
     if message.content.startswith("$test") and message.channel.name == 'cadet-admin':
-        channel = client.get_channel(XXXXXXXXXXXXXXXXXXXXXXX)
+        channel = client.get_channel(1011069501229518949)
         await channel.send('Hello World. Ready to Recall.')
+        await channel.send('Ready to recall all squadrons.')
+
+    # "$squadron1" recalls squadron 1
+    if message.content.startswith("$squadron1") and message.channel.name == 'cadet-admin':
+        channel = client.get_channel(900427739180458056)
+        await channel.send('@everyone RECALL RECALL RECALL, LIKE THIS MESSAGE ASAP TO REPORT ACCOUNTABILITY! CHECK ON YOUR WINGMEN!')
+
+    # "$squadron3" recalls squadron 2
+    if message.content.startswith("$squadron2") and message.channel.name == 'cadet-admin':
+        channel = client.get_channel(900429872214716456)
+        await channel.send('@everyone RECALL RECALL RECALL, LIKE THIS MESSAGE ASAP TO REPORT ACCOUNTABILITY! CHECK ON YOUR WINGMEN!')
+
+    # "$squadron3" recalls squadron 3
+    if message.content.startswith("$squadron3") and message.channel.name == 'cadet-admin':
+        channel = client.get_channel(900430073071546368)
+        await channel.send('@everyone RECALL RECALL RECALL, LIKE THIS MESSAGE ASAP TO REPORT ACCOUNTABILITY! CHECK ON YOUR WINGMEN!')
+
 # -----
 
 # confirm bot is running
