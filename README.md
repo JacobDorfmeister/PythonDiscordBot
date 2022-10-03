@@ -19,6 +19,11 @@ Needs: Discord Dev Account (to retrieve auth token for DISCORD_TOKEN)
 4. IDE (for editing)
   - I used Pycharm by Jetbrains (free) 
   - Will let you write/run python right away!
+  
+ ### Installing Discord.py
+ 1. In Pycharm, click on "python packages" on the bottom toolbar
+ 2. search for **discord.py** and hit install
+ 3. make sure the code starts with **import discord**
 
 
 # All cadet admins/users will need python in order to turn the bot on/off.
