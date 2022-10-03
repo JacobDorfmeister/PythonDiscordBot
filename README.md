@@ -1,8 +1,7 @@
 # PythonDiscordBot
 Made for use with AFROTC Detachment 675's Discord Messaging Server.
 
-Things you may need:
-       Discord Dev Account
+Things you may need besides a Discord Dev Account:
        
        The unique token for our channel. This must always be kept secret.
        
